@@ -313,6 +313,6 @@ Devise.setup do |config|
   config.omniauth :google_oauth2, ENV['GOOGLE_OAUTH_CLIENT_ID'], ENV['GOOGLE_OAUTH_CLIENT_SECRET'], {
     scope: 'email,profile',
     prompt: 'select_account',
-    redirect_uri: "http://127.0.0.1:3000/admins/auth/google_oauth2/callback"
+    redirect_uri: 'https://oauth-stage-82f2251a9098.herokuapp.com/admins/auth/google_oauth2/callback'
   }
 end
